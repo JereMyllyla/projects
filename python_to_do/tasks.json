@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "task": "Take out trash",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "task": "Take a walk",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "task": "Learn to fly",
+    "completed": false
+  }
+]
