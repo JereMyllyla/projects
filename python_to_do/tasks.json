@@ -15,7 +15,8 @@
     "completed": false
   },
   {
+    "id": 5,
     "task": "Shave head",
-    "completed": false
+    "completed": true
   }
 ]
