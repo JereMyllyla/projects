@@ -2,7 +2,7 @@
   {
     "id": 1,
     "task": "Take out trash",
-    "completed": false
+    "completed": true
   },
   {
     "id": 2,
@@ -10,8 +10,12 @@
     "completed": true
   },
   {
-    "id": 3,
-    "task": "Learn to fly",
+    "id": 4,
+    "task": "Code more",
+    "completed": false
+  },
+  {
+    "task": "Shave head",
     "completed": false
   }
 ]
