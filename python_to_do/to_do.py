@@ -1,13 +1,13 @@
 # A simple To-Do application, made with Python.
 
-# Planned features:
+# Features:
 #   Save tasks to a .JSON file
 #   Add a task to the to-do list.
 #   Display the current tasks in the to-do list.
 #   Mark tasks as completed.
 #   Mark tasks as uncompleted.
 #   Remove tasks from the to-do list.
-#   Empty the task list
+#   Empty the task list.
 
 import json
 import time
