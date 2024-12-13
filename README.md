@@ -1,30 +1,10 @@
 # Personal Project Repository
 
-A repository for my projects. 
+Welcome to my repository for personal projects! Below is a summary of the projects currently available in this repository.
 
 ## Projects
 
-### 1. **Python To-Do**
-A simple command line To-Do application made using Python.  
-
-**Features:**
-- Add, remove, and mark tasks as completed.
-- Delete every task from the list.
-- Lightweight and easy to use.  
-- Saves tasks into a .json file stored locally.
-
-[Project Folder](./python_to_do/).
-
-### 2. **Element Duel**
-An enhanced version of the classic rock-paper-scissors game, created in Python.  
-This project was completed as an optional assignment for the *Basics of Programming (TTC2030)* course in 2022.
-**Features:**
-- Expanded gameplay with elements like Fire, Water, and Earth.
-- Replayable and interactive.
-
-[Project Folder](./elementDuel/).
-
-### 3. **RPG Dice Roller**
+### 1. **RPG Dice Roller**
 A web-based tool for rolling dice commonly used in tabletop RPGs.
 
 **Features:**
@@ -35,3 +15,28 @@ A web-based tool for rolling dice commonly used in tabletop RPGs.
 [Project Folder](././dice_roller/).
 
 Live Demo: [RPG Dice Roller](https://dice-roller-ad0917-89421589bf8ca4f5002811b6c5a04f404a030ef1b0f4.pages.labranet.jamk.fi)
+
+---
+
+### 2. **Python To-Do**
+A simple command line To-Do application made using Python.  
+
+**Features:**
+- Add, remove, and mark tasks as completed.
+- Delete every task from the list.
+- Lightweight and easy to use.  
+- Saves tasks into a .json file stored locally.
+
+[Project Folder](./python_to_do/).
+
+---
+
+### 3. **Element Duel**
+An enhanced version of the classic rock-paper-scissors game, created in Python.  
+This project was completed as an optional assignment for the *Basics of Programming (TTC2030)* course in 2022.
+**Features:**
+- Expanded gameplay with elements like Fire, Water, and Earth.
+- Replayable and interactive.
+
+[Project Folder](./elementDuel/).
+
