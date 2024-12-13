@@ -20,7 +20,7 @@ A minimal To-Do application implemented in Python.
    - To mark a task as done or undone: type 'done' and provide the task number
    - To remove a task: type 'remove' and provide the task number
    - To delete all tasks: type 'DELETE' and confirm
-   - To exit: type 'exit'
+   - To exit: type 'exit' and press 'Enter'
 
 ## File Management:
 
@@ -28,7 +28,7 @@ The task list is stored in a 'tasks.json' file.
 
 ## Note:
 
-Use accepted keywords (add, done, remove, exit) for input.
+Use accepted keywords (add, done, remove, exit, DELETE) for inputs.
 
 ## By:
 
