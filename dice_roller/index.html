@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/d20_green.ico">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/fponticelli/dicefont/fc6b8c47/dist/dicefont/dicefont.css">
+    <script src="https://kit.fontawesome.com/bd66971d55.js" crossorigin="anonymous"></script>
+    <title>Dice Roller</title>
+</head>
+<body>
+    <h1 id="main_header">RPG Dice Roller</h1> 
+    <div id="roller_box">
+        <div id="top_die">
+            <i class="fa-solid fa-dice-d20 fa-2xl"></i>
+        </div>
+        <div id="result_box">
+            <p>Roll</p>
+            <p>Modifier</p>
+            <p>Total</p>
+            <p class="result" id="roll_result">0</p>
+            <p class="result" id="mod">0</p>
+            <p class="result" id="result">0</p>
+        </div>
+
+        <button class="btn" value=2 id="d2_btn"><i class="df-d2-2"></i></button>
+        <button class="btn" value=4 id="d4_btn"><i class="df-d4-4"></i></button>
+        <button class="btn" value=6 id="d6_btn"><i class="df-d6-6"></i></button>
+        <button class="btn" value=8 id="d8_btn"><i class="df-d8-8"></i></button>
+        <button class="btn" value=10 id="d10_btn"><i class="df-d10-10"></i></button>
+        <button class="btn" value=12 id="d12_btn"><i class="df-d12-12"></i></button>
+        <button class="btn" value=20 id="d20_btn"><i class="df-d20-20"></i></button>
+        <button class="btn" value=100 id="d100_btn"><i class="df-d10-0"></i></button>
+
+        <div class="hidden" id="roll_history">
+            <h2 id="history_header">Roll History</h2>
+        </div>
+
+        <button class="btn" id="settings_button">Roll Settings</button>
+
+        <form class="hidden" id="settings" name="modifier_form" onsubmit="return false;">
+            
+            <label for="modifier_number">Modifier 
+                <i class="fa-solid fa-circle-info" id="modifier_info">
+                    <span class="info_text" id="modifier_info_text">Modifier number will be added to the roll. Modifier can be set from -100 to 100.</span>
+                </i>
+            </label><br>
+            <input type="number" id="modifier_number" name="modifier_number" value="0" min="-100" max="100"><br>
+
+            <span>Roll Mode</span>
+            <i class="fa-solid fa-circle-info" id="mode_info">
+                <span class="info_text" id="mode_info_text"> 
+                    <p>Regular: rolls one die</p> 
+                    <p>Roll Two, Keep Highest: rolls two dice and uses the higher roll (lower result shown in parentheses)</p> 
+                    <p>Roll Two, Keep Lowest: uses the lower roll (higher shown in parentheses)</p>
+                    <p>Roll multiple dice: Choose 1-100 dice of the same type to roll</p>
+                </span>
+             </i><br>
+
+            <label class="roll_type_label" for="roll_type_regular">Regular</label>
+            <input type="radio" id="roll_type_regular" name="roll_type" value="regular" checked><br>
+
+            <label class="roll_type_label" for="roll_type_advantage">Roll two, keep highest</label>
+            <input type="radio" id="roll_type_advantage" name="roll_type" value="advantage"><br>
+
+            <label class="roll_type_label" for="roll_type_disadvantage">Roll two, keep lowest</label>
+            <input type="radio" id="roll_type_disadvantage" name="roll_type" value="disadvantage"><br>
+            
+            <label class="roll_type_label" for="roll_type_multiple">Roll multiple dice</label>
+            <input type="radio" id="roll_type_multiple" name="roll_type" value="multiple">
+            <input type="number" class="hidden" id="multiple_dice_amount" name="multiple_dice_amount" min="1" max="100" value="2"><br>
+
+            <input type="reset" class="btn" id="reset_btn" value="Reset">
+            <button class="btn" id="history_btn">History</button>
+        </form>
+    </div>
+    
+    <footer id="footer">
+        <p> Jere Myllylä 2024 | 
+            <a href="https://github.com/JereMyllyla/projects" target="_blank"><i class="fa-brands fa-github"></i></a> | 
+            <a href="https://www.linkedin.com/in/jere-myllyla/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </p> 
+    </footer>
+<script src="scripts.js"></script> 
+</body>
+</html>

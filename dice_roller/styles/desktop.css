@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400..900&display=swap');
+
+:root {
+    --text_color: #EEEEEE;
+    --highlight_color: #ACF266;
+    --background_color: #31363F;
+    --content_background: #222831;
+    --button_background: #838e87;
+    --base_fonts: 'Cinzel', Arial, Helvetica, sans-serif;
+    --header_fonts: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--background_color);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: var(--text_color);
+    font-family: var(--base_fonts);
+    display: flex;
+    flex-direction: column; 
+}
+
+#main_header {
+    text-align: center;
+    font-family: var(--header_fonts);
+    font-weight: 700;
+}
+
+#top_die {
+    color: var(--highlight_color);
+    font-size: 150%;
+}
+
+#roller_box {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: var(--content_background);
+    width: 60%;
+    min-width: 360px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    flex: 1;
+}
+
+#result_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 170%;
+    margin: 1%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+#result {
+    color: var(--highlight_color);     
+}
+
+.btn {
+    margin-bottom: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    width: 20%;
+    
+    max-height: 80px;  /* laptop */
+    background-color: var(--button_background);
+    font-size: 350%; 
+}
+
+.btn:hover {
+    background-color: var(--highlight_color);
+    color: var(--content_background);
+}
+
+label {
+    font-size: 100%;
+}
+
+input {
+    font-family: var(--base_fonts);
+    font-weight: 600;
+    background-color: var(--button_background);
+}
+
+#modifier_number {
+    width: 60px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#roll_history {
+    position: absolute;
+    overflow: auto;
+    max-height: 40%;
+    left: 25%;
+    top: 8%;
+    width: 50%;
+    min-width: 300px;
+    background-color: var(--content_background); opacity: 0.95;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+#history_header {
+    margin-bottom: 5%;
+}
+
+.log_entry {
+    text-align: left;
+    margin-top: -1%;
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+#settings_button {
+    font-size: 125%;
+    padding: 1%;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 250px;
+    margin-top: 2%;
+    font-family: var(--base_fonts);
+    font-weight: 600;
+
+    max-height: 50px; /* laptop */
+}
+
+form {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+#modifier_info {
+    position: relative;
+    display: inline-block;
+}
+
+#modifier_info #modifier_info_text {
+    visibility: hidden;
+    width: 150px;
+    background-color: var(--background_color);
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#modifier_info:hover #modifier_info_text {
+    visibility: visible;
+    opacity: 1;
+}
+
+#mode_info {
+    position: relative;
+    display: inline-block;
+}
+
+#mode_info #mode_info_text {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--background_color);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -75px;
+    left: 105%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#mode_info:hover #mode_info_text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.info_text {
+    font-size: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#multiple_dice_amount {
+    width: 40px;
+    font-size: 100%;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+#reset_btn {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    font-size: 90%;
+    border-radius: 5px;
+}
+
+#history_btn {
+    font-family: var(--base_fonts);
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    font-size: 90%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--content_background);
+    text-align: center;
+    padding-bottom: 1%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 5%;
+    font-weight: 600;
+}
+
+a:link {
+    color: var(--highlight_color);
+}
+a:visited {
+    color: var(--highlight_color);
+}
+
+
+
+
+
+
